@@ -3,8 +3,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.dao.User.AdminMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.dto.User" >
+<mapper namespace="com.rabbiter.sms.mapper.User.AdminMapper" >
+    <resultMap id="BaseUserMap" type="com.rabbiter.sms.entity.User" >
         <result column="id" property="id" jdbcType="VARCHAR" />
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="password" property="password" jdbcType="VARCHAR" />
@@ -20,7 +20,7 @@
         <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     </resultMap>
 
-    <insert id="add" parameterType="com.rabbiter.sms.dto.User">
+    <insert id="add" parameterType="com.rabbiter.sms.entity.User">
         INSERT INTO `admin`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="username != null and username != ''">username,</if>
@@ -53,7 +53,7 @@
             </foreach>
         </where>
     </delete>
-    <update id="update" parameterType="com.rabbiter.sms.dto.User">
+    <update id="update" parameterType="com.rabbiter.sms.entity.User">
         UPDATE `admin`
         <trim prefix="set" suffixOverrides=",">
             <if test="username != null and username != ''">

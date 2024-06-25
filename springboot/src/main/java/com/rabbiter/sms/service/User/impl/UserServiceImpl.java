@@ -3,11 +3,11 @@ package com.rabbiter.sms.service.User.impl;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.rabbiter.sms.dao.User.AdminMapper;
-import com.rabbiter.sms.dao.User.StudentMapper;
-import com.rabbiter.sms.dao.User.TeacherMapper;
-import com.rabbiter.sms.dao.User.UserMapper;
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.mapper.User.AdminMapper;
+import com.rabbiter.sms.mapper.User.StudentMapper;
+import com.rabbiter.sms.mapper.User.TeacherMapper;
+import com.rabbiter.sms.mapper.User.UserMapper;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.service.User.UserService;
 import org.springframework.stereotype.Service;
 

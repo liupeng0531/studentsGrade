@@ -1,5 +1,7 @@
 package com.rabbiter.sms.domain;
 
+import lombok.Data;
+
 /**
  * 课程具体安排
  **/

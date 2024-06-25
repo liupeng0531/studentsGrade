@@ -1,10 +1,10 @@
 package com.rabbiter.sms.service.User.impl;
 
 import com.github.pagehelper.PageRowBounds;
-import com.rabbiter.sms.dao.Profession.ProfessionMapper;
-import com.rabbiter.sms.dao.User.StudentMapper;
+import com.rabbiter.sms.mapper.Profession.ProfessionMapper;
+import com.rabbiter.sms.mapper.User.StudentMapper;
 import com.rabbiter.sms.domain.Profession;
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.service.User.StudentService;
 import com.rabbiter.sms.utils.PagingResult;
 import org.apache.ibatis.session.RowBounds;

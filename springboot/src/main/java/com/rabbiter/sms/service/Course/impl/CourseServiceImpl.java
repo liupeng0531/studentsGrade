@@ -1,12 +1,12 @@
 package com.rabbiter.sms.service.Course.impl;
 
 import com.github.pagehelper.PageRowBounds;
-import com.rabbiter.sms.dao.Course.CourseMapper;
-import com.rabbiter.sms.dao.CourseInfo.CourseInfoMapper;
-import com.rabbiter.sms.dao.Profession.ProfessionMapper;
+import com.rabbiter.sms.mapper.Course.CourseMapper;
+import com.rabbiter.sms.mapper.CourseInfo.CourseInfoMapper;
+import com.rabbiter.sms.mapper.Profession.ProfessionMapper;
 import com.rabbiter.sms.domain.CourseInfo;
 import com.rabbiter.sms.domain.Profession;
-import com.rabbiter.sms.dto.Course;
+import com.rabbiter.sms.entity.Course;
 import com.rabbiter.sms.service.Course.CourseService;
 import com.rabbiter.sms.utils.PagingResult;
 import org.apache.ibatis.session.RowBounds;

@@ -3,8 +3,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.dao.Timetable.TimetableMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.dto.Timetable" >
+<mapper namespace="com.rabbiter.sms.mapper.Timetable.TimetableMapper" >
+    <resultMap id="BaseUserMap" type="com.rabbiter.sms.entity.Timetable" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="week_id" property="weekId" jdbcType="INTEGER" />
         <result column="profession" property="profession" jdbcType="VARCHAR" />
@@ -12,7 +12,7 @@
         <result column="year" property="year" jdbcType="INTEGER" />
         <result column="term" property="term" jdbcType="INTEGER" />
     </resultMap>
-    <insert id="add" parameterType="com.rabbiter.sms.dto.Timetable">
+    <insert id="add" parameterType="com.rabbiter.sms.entity.Timetable">
         INSERT INTO timetable
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="weekId != null and weekId != ''">week_id,</if>

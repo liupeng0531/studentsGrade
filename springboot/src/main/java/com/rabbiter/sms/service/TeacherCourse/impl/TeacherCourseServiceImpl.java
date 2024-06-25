@@ -1,12 +1,12 @@
 package com.rabbiter.sms.service.TeacherCourse.impl;
 
-import com.rabbiter.sms.dao.Course.CourseMapper;
-import com.rabbiter.sms.dao.Profession.ProfessionMapper;
-import com.rabbiter.sms.dao.TeacherCourse.TeacherCourseMapper;
-import com.rabbiter.sms.dao.User.StudentMapper;
+import com.rabbiter.sms.mapper.Course.CourseMapper;
+import com.rabbiter.sms.mapper.Profession.ProfessionMapper;
+import com.rabbiter.sms.mapper.TeacherCourse.TeacherCourseMapper;
+import com.rabbiter.sms.mapper.User.StudentMapper;
 import com.rabbiter.sms.domain.Profession;
 import com.rabbiter.sms.domain.TeacherCourse;
-import com.rabbiter.sms.dto.Course;
+import com.rabbiter.sms.entity.Course;
 import com.rabbiter.sms.service.TeacherCourse.TeacherCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

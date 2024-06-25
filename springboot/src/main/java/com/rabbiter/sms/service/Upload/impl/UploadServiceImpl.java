@@ -3,7 +3,7 @@ package com.rabbiter.sms.service.Upload.impl;
 import com.alibaba.druid.support.logging.Log;
 import com.alibaba.druid.support.logging.LogFactory;
 import com.rabbiter.sms.service.Upload.UploadService;
-import com.rabbiter.sms.dao.Upload.UploadMapper;
+import com.rabbiter.sms.mapper.Upload.UploadMapper;
 import com.rabbiter.sms.domain.Upload;
 import org.springframework.stereotype.Service;
 

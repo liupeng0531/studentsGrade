@@ -7,7 +7,7 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.service.Upload.impl.UploadServiceImpl;
 import com.rabbiter.sms.service.User.UserService;
 import lombok.extern.slf4j.Slf4j;

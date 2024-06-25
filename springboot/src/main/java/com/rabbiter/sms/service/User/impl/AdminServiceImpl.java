@@ -1,8 +1,8 @@
 package com.rabbiter.sms.service.User.impl;
 
 import com.github.pagehelper.PageRowBounds;
-import com.rabbiter.sms.dao.User.AdminMapper;
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.mapper.User.AdminMapper;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.service.User.AdminService;
 import com.rabbiter.sms.utils.PagingResult;
 import org.apache.ibatis.session.RowBounds;

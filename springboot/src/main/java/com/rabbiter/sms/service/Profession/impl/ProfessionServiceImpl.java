@@ -1,6 +1,6 @@
 package com.rabbiter.sms.service.Profession.impl;
 
-import com.rabbiter.sms.dao.Profession.ProfessionMapper;
+import com.rabbiter.sms.mapper.Profession.ProfessionMapper;
 import com.rabbiter.sms.domain.Profession;
 import com.rabbiter.sms.service.Profession.ProfessionService;
 import org.springframework.stereotype.Service;

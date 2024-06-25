@@ -1,6 +1,6 @@
 package com.rabbiter.sms.service.User;
 
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.utils.PagingResult;
 import org.apache.ibatis.session.RowBounds;
 

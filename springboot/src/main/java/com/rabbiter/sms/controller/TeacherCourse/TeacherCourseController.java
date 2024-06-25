@@ -3,7 +3,7 @@ package com.rabbiter.sms.controller.TeacherCourse;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.rabbiter.sms.domain.TeacherCourse;
-import com.rabbiter.sms.dto.Course;
+import com.rabbiter.sms.entity.Course;
 import com.rabbiter.sms.service.TeacherCourse.TeacherCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

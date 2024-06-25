@@ -1,15 +1,15 @@
 package com.rabbiter.sms.service.Timetable.impl;
 
-import com.rabbiter.sms.dao.CourseInfo.CourseInfoMapper;
-import com.rabbiter.sms.dao.TeacherCourse.TeacherCourseMapper;
-import com.rabbiter.sms.dao.Timetable.TimetableMapper;
-import com.rabbiter.sms.dao.User.StudentMapper;
-import com.rabbiter.sms.dao.WeekCourse.WeekCourseMapper;
+import com.rabbiter.sms.mapper.CourseInfo.CourseInfoMapper;
+import com.rabbiter.sms.mapper.TeacherCourse.TeacherCourseMapper;
+import com.rabbiter.sms.mapper.Timetable.TimetableMapper;
+import com.rabbiter.sms.mapper.User.StudentMapper;
+import com.rabbiter.sms.mapper.WeekCourse.WeekCourseMapper;
 import com.rabbiter.sms.domain.CourseInfo;
 import com.rabbiter.sms.domain.TeacherCourse;
 import com.rabbiter.sms.domain.WeekCourse;
-import com.rabbiter.sms.dto.Timetable;
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.entity.Timetable;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.service.Timetable.TimetableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

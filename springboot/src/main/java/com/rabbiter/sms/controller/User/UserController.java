@@ -1,6 +1,6 @@
 package com.rabbiter.sms.controller.User;
 
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.entity.User;
 import com.rabbiter.sms.service.User.UserService;
 import com.rabbiter.sms.utils.PassToken;
 import com.rabbiter.sms.utils.UserLoginToken;

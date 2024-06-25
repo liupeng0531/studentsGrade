@@ -1,6 +1,6 @@
 package com.rabbiter.sms.service.User;
 
-import com.rabbiter.sms.dto.User;
+import com.rabbiter.sms.entity.User;
 
 import java.util.List;
 import java.util.Map;

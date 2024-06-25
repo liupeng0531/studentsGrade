@@ -3,8 +3,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.dao.Score.ScoreMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.dto.Course" >
+<mapper namespace="com.rabbiter.sms.mapper.Score.ScoreMapper" >
+    <resultMap id="BaseUserMap" type="com.rabbiter.sms.entity.Course" >
         <result column="id" property="id" jdbcType="VARCHAR" />
         <result column="name" property="name" jdbcType="VARCHAR" />
         <result column="credits" property="credits" jdbcType="DECIMAL" />
@@ -202,7 +202,7 @@
             </if>
         </where>
     </select>
-    <insert id="addEntry" parameterType="com.rabbiter.sms.dto.Score">
+    <insert id="addEntry" parameterType="com.rabbiter.sms.entity.Score">
         INSERT INTO student_course
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="no != null and no != ''">student_id,</if>
@@ -225,7 +225,7 @@
             <if test="courseId != null and courseId != ''">#{courseId},</if>
         </trim>
     </insert>
-    <update id="updateEntry" parameterType="com.rabbiter.sms.dto.Score">
+    <update id="updateEntry" parameterType="com.rabbiter.sms.entity.Score">
         UPDATE student_course
         <trim prefix="set" suffixOverrides=",">
             <if test="name != null and name != ''">

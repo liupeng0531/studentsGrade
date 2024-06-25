@@ -3,8 +3,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.dao.Course.CourseMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.dto.Course" >
+<mapper namespace="com.rabbiter.sms.mapper.Course.CourseMapper" >
+    <resultMap id="BaseUserMap" type="com.rabbiter.sms.entity.Course" >
         <result column="id" property="id" jdbcType="VARCHAR" />
         <result column="name" property="name" jdbcType="VARCHAR" />
         <result column="credits" property="credits" jdbcType="DECIMAL" />
@@ -20,7 +20,7 @@
         <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     </resultMap>
 
-    <insert id="addCourse" parameterType="com.rabbiter.sms.dto.Course">
+    <insert id="addCourse" parameterType="com.rabbiter.sms.entity.Course">
         INSERT INTO course
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null and id != ''">id,</if>
@@ -55,7 +55,7 @@
             </foreach>
         </where>
     </delete>
-    <update id="update" parameterType="com.rabbiter.sms.dto.User">
+    <update id="update" parameterType="com.rabbiter.sms.entity.User">
         UPDATE course
         <trim prefix="set" suffixOverrides=",">
             <if test="name != null and name != ''">

@@ -1,7 +1,7 @@
 package com.rabbiter.sms.service.Score;
 
-import com.rabbiter.sms.dto.Course;
-import com.rabbiter.sms.dto.Score;
+import com.rabbiter.sms.entity.Course;
+import com.rabbiter.sms.entity.Score;
 import com.rabbiter.sms.utils.PagingResult;
 import org.apache.ibatis.session.RowBounds;
 

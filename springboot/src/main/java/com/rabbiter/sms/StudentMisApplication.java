@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan("com.rabbiter.sms.dao")
+@MapperScan("com.rabbiter.sms.mapper")
 public class StudentMisApplication {
 
   public static void main(String[] args) {

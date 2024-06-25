@@ -1,7 +1,7 @@
 package com.rabbiter.sms.service.TeacherCourse;
 
 import com.rabbiter.sms.domain.TeacherCourse;
-import com.rabbiter.sms.dto.Course;
+import com.rabbiter.sms.entity.Course;
 
 import java.util.List;
 import java.util.Map;

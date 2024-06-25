@@ -3,7 +3,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.dao.TeacherCourse.TeacherCourseMapper" >
+<mapper namespace="com.rabbiter.sms.mapper.TeacherCourse.TeacherCourseMapper" >
     <resultMap id="BaseUserMap" type="com.rabbiter.sms.domain.TeacherCourse" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="teacher_id" property="teacherId" jdbcType="VARCHAR" />
@@ -14,7 +14,7 @@
         <result column="term" property="term" jdbcType="INTEGER" />
         <result column="course_id" property="courseId" jdbcType="VARCHAR" />
     </resultMap>
-    <resultMap id="CourseMap" type="com.rabbiter.sms.dto.Course" >
+    <resultMap id="CourseMap" type="com.rabbiter.sms.entity.Course" >
         <result column="id" property="id" jdbcType="VARCHAR" />
         <result column="name" property="name" jdbcType="VARCHAR" />
         <result column="credits" property="credits" jdbcType="DECIMAL" />

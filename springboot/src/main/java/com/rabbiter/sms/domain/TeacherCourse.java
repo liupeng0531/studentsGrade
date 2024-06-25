@@ -1,6 +1,6 @@
 package com.rabbiter.sms.domain;
 
-import com.rabbiter.sms.dto.Course;
+import com.rabbiter.sms.entity.Course;
 
 /**
  * 教师课程任命表实体类
