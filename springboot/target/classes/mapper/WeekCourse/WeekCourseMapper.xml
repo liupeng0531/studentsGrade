@@ -3,8 +3,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.mapper.WeekCourse.WeekCourseMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.domain.WeekCourse" >
+<mapper namespace="com.example.springboot.mapper.WeekCourse.WeekCourseMapper" >
+    <resultMap id="BaseUserMap" type="com.example.springboot.domain.WeekCourse" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="monday" property="monday" jdbcType="VARCHAR" />
         <result column="tuesday" property="tuesday" jdbcType="VARCHAR" />
@@ -14,7 +14,7 @@
         <result column="saturday" property="saturday" jdbcType="VARCHAR" />
         <result column="sunday" property="sunday" jdbcType="VARCHAR" />
     </resultMap>
-    <insert id="add" parameterType="com.rabbiter.sms.entity.Timetable">
+    <insert id="add" parameterType="com.example.springboot.entity.Timetable">
         <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
             select LAST_INSERT_ID() as id
         </selectKey>
@@ -39,7 +39,7 @@
         </trim>
     </insert>
 
-    <update id="update" parameterType="com.rabbiter.sms.domain.WeekCourse">
+    <update id="update" parameterType="com.example.springboot.domain.WeekCourse">
         UPDATE week
         <trim prefix="set" suffixOverrides=",">
             <if test="monday != null and monday != ''">

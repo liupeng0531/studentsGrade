@@ -3,14 +3,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.mapper.Upload.UploadMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.domain.Upload" >
+<mapper namespace="com.example.springboot.mapper.Upload.UploadMapper" >
+    <resultMap id="BaseUserMap" type="com.example.springboot.domain.Upload" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="user_id" property="userId" jdbcType="VARCHAR" />
         <result column="url" property="url" jdbcType="VARCHAR" />
         <result column="level" property="level" jdbcType="INTEGER" />
     </resultMap>
-    <insert id="add" parameterType="com.rabbiter.sms.entity.Timetable">
+    <insert id="add" parameterType="com.example.springboot.entity.Timetable">
         INSERT INTO upload
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="userId != null and userId != ''">user_id,</if>
@@ -39,7 +39,7 @@
             AND level = #{condition.level}
         </where>
     </select>
-    <update id="update" parameterType="com.rabbiter.sms.domain.Upload">
+    <update id="update" parameterType="com.example.springboot.domain.Upload">
         UPDATE upload
         <trim prefix="set" suffixOverrides=",">
             <if test="url != null and url != ''">

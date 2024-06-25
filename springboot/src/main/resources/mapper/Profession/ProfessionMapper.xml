@@ -3,12 +3,12 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.sms.mapper.Profession.ProfessionMapper" >
-    <resultMap id="BaseUserMap" type="com.rabbiter.sms.domain.Profession" >
+<mapper namespace="com.example.springboot.mapper.Profession.ProfessionMapper" >
+    <resultMap id="BaseUserMap" type="com.example.springboot.domain.Profession" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="name" property="name" jdbcType="VARCHAR" />
     </resultMap>
-     <insert id="addProfession" parameterType="com.rabbiter.sms.domain.Profession">
+     <insert id="addProfession" parameterType="com.example.springboot.domain.Profession">
          <selectKey keyProperty="id" resultType="java.lang.Integer" order="AFTER">
              select LAST_INSERT_ID() as id
          </selectKey>
